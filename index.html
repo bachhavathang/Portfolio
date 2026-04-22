@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Athang Bachhav — Data Scientist</title>
+  <meta name="description" content="Athang Bachhav — Data Scientist specializing in ML, NLP, and RAG pipelines. Based in New York City, NY." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+
+  <!-- ── DESKTOP NAV ── -->
+  <nav id="desktop-nav">
+    <a href="#profile" class="nav-logo">AB<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── MOBILE NAV ── -->
+  <nav id="hamburger-nav">
+    <a href="#profile" class="nav-logo">AB<span>.</span></a>
+    <div class="hamburger-menu">
+      <button class="hamburger-icon" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="menu-links">
+        <li><a href="#about"        onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills"       onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects"     onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#experience"   onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#publications" onclick="toggleMenu()">Publications</a></li>
+        <li><a href="#contact"      onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section id="profile">
+    <div class="profile-right fade-in">
+      <p class="eyebrow">Data Scientist &amp; ML Engineer</p>
+      <h1 class="hero-name">Athang<br /><em>Bachhav</em></h1>
+      <p class="hero-bio">
+        I build production-ready AI systems — RAG pipelines, NLP workflows, and rigorous experimentation
+        frameworks — that turn complex data into decisions that move the business. 3+ years across
+        fintech, insurance, and nonprofit tech. MS in Data Science, University at Buffalo.
+      </p>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">3<em>+</em></span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">2</span>
+          <span class="stat-label">Peer-Reviewed Publications</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">90<em>%</em></span>
+          <span class="stat-label">Pipeline Efficiency Gain</span>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a href="assets/Athang_Bachhav.pdf" class="btn btn-primary" download>Download CV</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/athang-bachhav-662456191/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img src="./assets/linkedin.png" alt="LinkedIn" class="social-icon" />
+        </a>
+        <a href="https://github.com/bachhavathang" target="_blank" rel="noopener" aria-label="GitHub">
+          <img src="./assets/github.png" alt="GitHub" class="social-icon" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════ -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-num">01</span>
+        <h2 class="section-title">About <em>Me</em></h2>
+      </div>
+
+      <div class="about-grid reveal">
+        <div class="about-bio">
+          <p>
+            I'm a Data Scientist who operates at the intersection of <strong>production ML engineering</strong>
+            and <strong>business strategy</strong>. My work spans RAG systems, NLP pipelines, large-scale
+            ETL infrastructure, and statistical experimentation — always anchored to outcomes, not just
+            model metrics.
+          </p>
+          <p>
+            At AIG I architected a LangChain-based RAG framework that cut document processing time by 35%
+            and saved adjusters 50+ hours per month. At InfoWay Solutions I deployed conversion propensity
+            models with sub-200ms inference latency that boosted conversion accuracy by 22%. At ACDC I'm
+            currently building NLP pipelines and semantic search systems for community intelligence.
+          </p>
+          <p>
+            I publish on Medium, present at AI/ML meetups across NYC, and maintain an active GitHub
+            portfolio of open-source data science projects spanning experimentation design, Bayesian
+            modeling, and multi-agent LLM systems.
+          </p>
+        </div>
+
+        <div class="about-cards">
+          <div class="about-card">
+            <div class="about-card-icon">🎓</div>
+            <h3>Education</h3>
+            <p>MPS (M.S.) Data Science &amp; Applications<br />University at Buffalo, SUNY</p>
+            <p class="about-card-sub">B.E. Information Technology (Data Science)<br />Savitribai Phule Pune University</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">📍</div>
+            <h3>Current Role</h3>
+            <p>Associate Data Scientist<br />Data Research Lead</p>
+            <p class="about-card-sub">ACDC — Asian Community<br />Development Center, NJ</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">🏅</div>
+            <h3>Certifications</h3>
+            <p>Google Analytics 4 (GA4)</p>
+            <p class="about-card-sub">2 Peer-Reviewed ML Publications<br />IJARESM, Nov &amp; Dec 2022</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SKILLS
+  ══════════════════════════════════════ -->
+  <section id="skills" class="alt-bg">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Technical <em>Skills</em></h2>
+      </div>
+
+      <div class="skills-grid reveal">
+
+        <div class="skill-cluster">
+          <p class="cluster-label">Languages &amp; Querying</p>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Scala</span>
+            <span class="tag">PySpark</span>
+            <span class="tag">Java</span>
+            <span class="tag">R</span>
+          </div>
+        </div>
+
+        <div class="skill-cluster">
+          <p class="cluster-label">Machine Learning</p>
+          <div class="skill-tags">
+            <span class="tag">scikit-learn</span>
+            <span class="tag">XGBoost</span>
+            <span class="tag">Random Forest</span>
+            <span class="tag">LightGBM</span>
+            <span class="tag">Feature Engineering</span>
+            <span class="tag">Hyperparameter Tuning</span>
+            <span class="tag">Cross-Validation</span>
+          </div>
+        </div>
+
+        <div class="skill-cluster">
+          <p class="cluster-label">AI &amp; Generative AI</p>
+          <div class="skill-tags">
+            <span class="tag">LangChain</span>
+            <span class="tag">RAG</span>
+            <span class="tag">LLMs</span>
+            <span class="tag">Pinecone</span>
+            <span class="tag">Milvus</span>
+            <span class="tag">Transformers</span>
+            <span class="tag">spaCy</span>
+            <span class="tag">NER</span>
+            <span class="tag">Topic Modeling</span>
+            <span class="tag">Sentiment Analysis</span>
+          </div>
+        </div>
+
+        <div class="skill-cluster">
+          <p class="cluster-label">Data Engineering</p>
+          <div class="skill-tags">
+            <span class="tag">Spark</span>
+            <span class="tag">Hadoop</span>
+            <span class="tag">ETL Pipelines</span>
+            <span class="tag">BigQuery</span>
+            <span class="tag">Data Warehousing</span>
+            <span class="tag">GCP</span>
+            <span class="tag">AWS</span>
+          </div>
+        </div>
+
+        <div class="skill-cluster">
+          <p class="cluster-label">Deployment &amp; MLOps</p>
+          <div class="skill-tags">
+            <span class="tag">Flask</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Git</span>
+            <span class="tag">Jenkins</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">Streamlit</span>
+          </div>
+        </div>
+
+        <div class="skill-cluster">
+          <p class="cluster-label">Experimentation &amp; Analytics</p>
+          <div class="skill-tags">
+            <span class="tag">A/B Testing</span>
+            <span class="tag">CUPED</span>
+            <span class="tag">Causal Inference</span>
+            <span class="tag">Bayesian Modeling</span>
+            <span class="tag">PyMC</span>
+            <span class="tag">Time-Series</span>
+            <span class="tag">Plotly</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       PROJECTS
+  ══════════════════════════════════════ -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Selected <em>Projects</em></h2>
+      </div>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Project 1 — JPMC (NEW) -->
+      <article class="project-card reveal">
+        <div class="project-card-inner">
+          <div class="project-meta">
+            <span class="project-num">01</span>
+            <div class="project-badges">
+              <span class="badge">XGBoost</span>
+              <span class="badge">K-Means</span>
+              <span class="badge">SHAP</span>
+            </div>
+          </div>
+          <h3 class="project-title">Census Income Classification &amp; Customer Segmentation — JPMC</h3>
+          <p class="project-desc">
+            Binary income classifier built on 152K U.S. Census records for JPMC's CCB Risk division.
+            XGBoost with a temporal train/test split (1994 train → 1995 test), PR-AUC as primary metric,
+            and cost-sensitive learning to handle the 92/8 class imbalance. Top 10% model score captures
+            66.7% of all high earners (6.7× lift). K-Means segmentation surfaces 5 actionable marketing
+            personas — Peak Earners through Young Starters — each with distinct product strategy.
+          </p>
+          <ul class="project-stats">
+            <li><strong>PR-AUC 0.677</strong> · ROC-AUC 0.931</li>
+            <li><strong>6.7×</strong> lift at top 10%</li>
+            <li><strong>5</strong> customer personas</li>
+          </ul>
+          <a href="https://github.com/bachhavathang/JPMC-income-classification" target="_blank" rel="noopener" class="project-link">
+            View on GitHub <span>→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card reveal">
+        <div class="project-card-inner">
+          <div class="project-meta">
+            <span class="project-num">02</span>
+            <div class="project-badges">
+              <span class="badge">A/B Testing</span>
+              <span class="badge">CUPED</span>
+              <span class="badge">Python</span>
+            </div>
+          </div>
+          <h3 class="project-title">Notification Frequency Reduction — Experimentation Design</h3>
+          <p class="project-desc">
+            End-to-end A/B test using CUPED variance reduction, achieving a 40% reduction in variance
+            and a statistically significant +2.97pp retention lift (p = 0.0070). Built SRM detection via
+            chi-square test and two reusable Python modules (<em>simulate.py</em>, <em>stats.py</em>) —
+            production-grade experimentation infrastructure from scratch.
+          </p>
+          <ul class="project-stats">
+            <li><strong>+2.97pp</strong> retention lift</li>
+            <li><strong>40%</strong> variance reduction</li>
+            <li><strong>p = 0.0070</strong> significant</li>
+          </ul>
+          <a href="https://github.com/bachhavathang" target="_blank" rel="noopener" class="project-link">
+            View on GitHub <span>→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card reveal">
+        <div class="project-card-inner">
+          <div class="project-meta">
+            <span class="project-num">03</span>
+            <div class="project-badges">
+              <span class="badge">Clustering</span>
+              <span class="badge">K-Means</span>
+              <span class="badge">Spotify API</span>
+            </div>
+          </div>
+          <h3 class="project-title">Podcast Creator Monetization Segmentation Pipeline</h3>
+          <p class="project-desc">
+            Segmented 758 Spotify creators to uncover monetization readiness gaps — distinguishing
+            silently churned shows, stalled growth creators, and high-potential partners. Built an
+            end-to-end ML pipeline via the Spotify Web API with 6 engineered behavioral features and
+            a 0–100 monetization readiness score using K-Means clustering.
+          </p>
+          <ul class="project-stats">
+            <li><strong>758</strong> creators analyzed</li>
+            <li><strong>5</strong> actionable archetypes</li>
+            <li><strong>124</strong> churn-risk creators flagged</li>
+          </ul>
+          <a href="https://github.com/bachhavathang" target="_blank" rel="noopener" class="project-link">
+            View on GitHub <span>→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="project-card reveal">
+        <div class="project-card-inner">
+          <div class="project-meta">
+            <span class="project-num">04</span>
+            <div class="project-badges">
+              <span class="badge">Bayesian</span>
+              <span class="badge">PyMC</span>
+              <span class="badge">CLV</span>
+            </div>
+          </div>
+          <h3 class="project-title">Causal Inference &amp; Customer Lifetime Value Modeling</h3>
+          <p class="project-desc">
+            Engineered a Bayesian CLV forecasting system using PyMC to predict high-value user segments
+            and quantify the revenue impact of targeted retention interventions — directly applicable to
+            subscriber lifecycle strategy. Reduced model inference latency by 92% to support real-time
+            decision engines.
+          </p>
+          <ul class="project-stats">
+            <li><strong>92%</strong> latency reduction</li>
+            <li><strong>PyMC</strong> Bayesian forecasting</li>
+            <li><strong>CLV-driven</strong> retention strategy</li>
+          </ul>
+          <a href="https://github.com/bachhavathang" target="_blank" rel="noopener" class="project-link">
+            View on GitHub <span>→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Project 5 -->
+      <article class="project-card reveal">
+        <div class="project-card-inner">
+          <div class="project-meta">
+            <span class="project-num">05</span>
+            <div class="project-badges">
+              <span class="badge">BigQuery</span>
+              <span class="badge">GCP</span>
+              <span class="badge">Spark</span>
+            </div>
+          </div>
+          <h3 class="project-title">Large-Scale Data Pipeline &amp; Warehousing — GCP &amp; BigQuery</h3>
+          <p class="project-desc">
+            Architected a distributed data repository on BigQuery processing 1.5M records, using SQL and
+            Spark for complex multi-source transformation to ensure high-fidelity data availability for
+            downstream experimentation. Built with schema design, data validation, and production-grade
+            ingestion controls throughout.
+          </p>
+          <ul class="project-stats">
+            <li><strong>1.5M</strong> records processed</li>
+            <li><strong>Spark + SQL</strong> transformation</li>
+            <li><strong>BigQuery</strong> warehouse</li>
+          </ul>
+          <a href="https://github.com/bachhavathang" target="_blank" rel="noopener" class="project-link">
+            View on GitHub <span>→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Project 6 -->
+      <article class="project-card reveal">
+        <div class="project-card-inner">
+          <div class="project-meta">
+            <span class="project-num">06</span>
+            <div class="project-badges">
+              <span class="badge">Time Series</span>
+              <span class="badge">ARMA</span>
+              <span class="badge">statsmodels</span>
+            </div>
+          </div>
+          <h3 class="project-title">Cryptocurrency Market Forecasting</h3>
+          <p class="project-desc">
+            Applied ARMA models to 366 days of Bitcoin price data ($988–$10,178), achieving stationarity
+            via first-order differencing (Dickey-Fuller p = 0.001). Grid-searched ARMA(p,q) parameters
+            using AIC minimization to identify the optimal (3,2) configuration, validated on a 73-day
+            hold-out period at peak market volatility.
+          </p>
+          <ul class="project-stats">
+            <li><strong>ARMA(3,2)</strong> optimal config</li>
+            <li><strong>366 days</strong> of BTC data</li>
+            <li><strong>p = 0.001</strong> Dickey-Fuller</li>
+          </ul>
+          <a href="https://github.com/bachhavathang" target="_blank" rel="noopener" class="project-link">
+            View on GitHub <span>→</span>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       EXPERIENCE
+  ══════════════════════════════════════ -->
+  <section id="experience" class="alt-bg">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Work <em>Experience</em></h2>
+      </div>
+
+      <div class="timeline">
+
+        <!-- ACDC -->
+        <div class="timeline-item reveal">
+          <div class="timeline-meta">
+            <p class="timeline-period">Nov 2025 — Present</p>
+            <p class="timeline-company">ACDC</p>
+            <p class="timeline-location">Remote, NJ</p>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-role">Associate Data Scientist, Data Research Lead</h3>
+            <ul class="timeline-bullets">
+              <li>Architects robust RAG pipelines integrating Pinecone/Milvus vector databases with LLMs to automate insight extraction from unstructured institutional archives.</li>
+              <li>Engineers scalable NLP workflows using spaCy and Transformers for sentiment analysis and NER on community engagement data, enhancing stakeholder feedback loops.</li>
+              <li>Orchestrated LLM frameworks with LangChain to optimize analytical pipeline processing efficiency by 90%, with robust testing protocols for AI-generated financial outputs.</li>
+              <li>Develops automated PySpark and SQL-based ETL frameworks to mine large textual datasets, driving organizational forecasting and decision-making.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- AIG -->
+        <div class="timeline-item reveal">
+          <div class="timeline-meta">
+            <p class="timeline-period">Feb 2025 — Oct 2025</p>
+            <p class="timeline-company">AIG</p>
+            <p class="timeline-location">New York City, NY</p>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-role">Associate Data Scientist</h3>
+            <ul class="timeline-bullets">
+              <li>Architected a RAG framework using LangChain to automate clause extraction, increasing document processing efficiency by 35% while deploying scalable REST APIs via Docker.</li>
+              <li>Engineered XGBoost risk models via BigQuery, improving predictive precision for policyholder classification by 18% and reducing data latency by 25%.</li>
+              <li>Deployed containerized microservices using Flask and Docker, reducing model-to-production cycle by 40%.</li>
+              <li>Designed actionable metrics on semantic search tools, decreasing manual document retrieval time for adjusters by over 50 hours per month.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- InfoWay -->
+        <div class="timeline-item reveal">
+          <div class="timeline-meta">
+            <p class="timeline-period">Jan 2021 — Jul 2023</p>
+            <p class="timeline-company">InfoWay Solutions</p>
+            <p class="timeline-location">Mumbai, India</p>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-role">Executive Data Scientist</h3>
+            <ul class="timeline-bullets">
+              <li>Engineered predictive models on customer datasets, boosting conversion accuracy by 22% through advanced feature engineering and hyperparameter tuning in production.</li>
+              <li>Designed recommendation prototypes with collaborative filtering and conducted A/B testing to strengthen user engagement analysis and personalization experiments.</li>
+              <li>Architected scalable ETL pipelines with Python and SQL for multi-source data extraction, preprocessing, and validation — improving training data quality for downstream modeling.</li>
+              <li>Delivered ML solutions with real-time response times under 200ms by partnering with cross-functional teams to translate business goals into technical requirements.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- UB Intern -->
+        <div class="timeline-item reveal">
+          <div class="timeline-meta">
+            <p class="timeline-period">Jan 2025 — Feb 2025</p>
+            <p class="timeline-company">University at Buffalo</p>
+            <p class="timeline-location">Buffalo, NY</p>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-role">Data Scientist — Intern</h3>
+            <ul class="timeline-bullets">
+              <li>Applied statistical modeling and data wrangling in R and Python to support public health research projects within the UB Department of Biostatistics.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       PUBLICATIONS
+  ══════════════════════════════════════ -->
+  <section id="publications">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-num">05</span>
+        <h2 class="section-title">Publications <em>&amp; Research</em></h2>
+      </div>
+
+      <div class="pub-list reveal">
+
+        <div class="pub-item">
+          <div class="pub-year">2022</div>
+          <div class="pub-body">
+            <p class="pub-venue">IJARESM &nbsp;·&nbsp; Vol. 10(11), Nov 2022 &nbsp;·&nbsp; ISSN: 2455-6211</p>
+            <h3 class="pub-title">Facial Feature Extraction and Emotional Analysis Using Machine Learning</h3>
+            <p class="pub-desc">
+              Sharma S., Bachhav A.V., et al. ML-driven emotion classification system using facial feature
+              extraction techniques — published in the International Journal of All Research Education and
+              Scientific Methods.
+            </p>
+          </div>
+          <div class="pub-actions">
+            <span class="pub-badge">Peer-Reviewed</span>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2022</div>
+          <div class="pub-body">
+            <p class="pub-venue">IJARESM &nbsp;·&nbsp; Vol. 10(12), Dec 2022 &nbsp;·&nbsp; ISSN: 2455-6211</p>
+            <h3 class="pub-title">Driver Drowsiness Detection Using Artificial Intelligence</h3>
+            <p class="pub-desc">
+              Saqlain F., Bachhav A.V., et al. Computer vision system for real-time driver alertness
+              monitoring for road safety applications — published in the International Journal of All
+              Research Education and Scientific Methods.
+            </p>
+          </div>
+          <div class="pub-actions">
+            <span class="pub-badge">Peer-Reviewed</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════ -->
+  <section id="contact" class="alt-bg">
+    <div class="section-inner contact-inner">
+      <div class="section-header reveal">
+        <span class="section-num">06</span>
+        <h2 class="section-title">Get in <em>Touch</em></h2>
+      </div>
+
+      <p class="contact-intro reveal">
+        Open to senior DS roles, interesting collaborations, and NYC-area AI/ML meetups.
+        Reach out via email or connect on LinkedIn.
+      </p>
+
+      <div class="contact-links reveal">
+        <a href="mailto:athangb@proton.me" class="contact-card">
+          <img src="./assets/email.png" alt="Email" class="contact-icon" />
+          <div>
+            <p class="contact-card-label">Email</p>
+            <p class="contact-card-value">athangb@proton.me</p>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/athang-bachhav-662456191/" target="_blank" rel="noopener" class="contact-card">
+          <img src="./assets/linkedin.png" alt="LinkedIn" class="contact-icon" />
+          <div>
+            <p class="contact-card-label">LinkedIn</p>
+            <p class="contact-card-value">athang-bachhav-662456191</p>
+          </div>
+        </a>
+        <a href="https://github.com/bachhavathang" target="_blank" rel="noopener" class="contact-card">
+          <img src="./assets/github.png" alt="GitHub" class="contact-icon" />
+          <div>
+            <p class="contact-card-label">GitHub</p>
+            <p class="contact-card-value">bachhavathang</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-name">Athang Bachhav</p>
+      <nav class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2025 Athang Bachhav. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

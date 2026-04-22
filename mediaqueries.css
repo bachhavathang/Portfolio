@@ -1,0 +1,256 @@
+/* ══════════════════════════════════════════════════════
+   MEDIAQUERIES — ATHANG BACHHAV PORTFOLIO
+   Breakpoints: tablet ≤ 1024px | mobile ≤ 640px
+══════════════════════════════════════════════════════ */
+
+/* ── TABLET (≤ 1024px) ── */
+@media (max-width: 1024px) {
+  :root {
+    font-size: 15px;
+  }
+
+  section {
+    padding: 4.5rem 0;
+  }
+
+  /* Nav */
+  #desktop-nav { display: none; }
+  #hamburger-nav { display: flex; }
+
+  /* Hero */
+  #profile {
+    padding-top: 7rem;
+    text-align: center;
+  }
+
+  .eyebrow {
+    justify-content: center;
+  }
+
+  .hero-bio {
+    margin: 0 auto;
+  }
+
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-socials {
+    justify-content: center;
+  }
+
+  /* About */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  /* Skills */
+  .skill-cluster {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  /* Projects */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1.5rem;
+  }
+
+  #projects .section-header {
+    padding: 0 1.5rem 1.25rem;
+  }
+
+  /* Experience */
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .timeline-meta {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .timeline-period {
+    margin-bottom: 0;
+  }
+
+  /* Publications */
+  .pub-item {
+    grid-template-columns: 60px 1fr;
+    gap: 1.5rem;
+  }
+
+  .pub-badge {
+    display: none;
+  }
+
+  /* Contact */
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-card {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  /* Footer */
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-nav {
+    justify-content: center;
+  }
+
+  /* Section inner */
+  .section-inner {
+    padding: 0 1.5rem;
+  }
+}
+
+/* ── MOBILE (≤ 640px) ── */
+@media (max-width: 640px) {
+  :root {
+    font-size: 14px;
+  }
+
+  section {
+    padding: 3.5rem 0;
+  }
+
+  /* Hero */
+  #profile {
+    padding: 6rem 1.25rem 2.5rem;
+  }
+
+  .hero-name {
+    font-size: clamp(3rem, 13vw, 4rem);
+  }
+
+  .hero-stats {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .stat-divider {
+    display: none;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Section headers */
+  .section-inner {
+    padding: 0 1.25rem;
+  }
+
+  .section-header {
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+  }
+
+  /* About cards */
+  .about-card {
+    padding: 1.25rem;
+  }
+
+  /* Skills */
+  .skill-cluster {
+    padding: 1.25rem 0;
+    gap: 0.6rem;
+  }
+
+  /* Projects */
+  .projects-grid {
+    padding: 0 1.25rem;
+  }
+
+  #projects .section-header {
+    padding: 0 1.25rem 1.25rem;
+  }
+
+  .project-card-inner {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .project-title {
+    font-size: 1.3rem;
+  }
+
+  /* Experience */
+  .timeline-item {
+    padding: 1.75rem 0;
+  }
+
+  .timeline-role {
+    font-size: 1.2rem;
+  }
+
+  /* Publications */
+  .pub-item {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding: 1.75rem 0;
+  }
+
+  .pub-year {
+    font-size: 1.75rem;
+  }
+
+  .pub-title {
+    font-size: 1.2rem;
+  }
+
+  /* Contact */
+  .contact-card {
+    max-width: 100%;
+  }
+
+  /* Footer */
+  .footer-inner {
+    gap: 0.875rem;
+  }
+
+  .footer-nav {
+    gap: 1.25rem;
+    flex-wrap: wrap;
+  }
+}
+
+/* ── VERY SMALL (≤ 380px) ── */
+@media (max-width: 380px) {
+  .hero-name {
+    font-size: 2.75rem;
+  }
+
+  .hero-stats {
+    gap: 0.75rem;
+  }
+
+  .stat-num {
+    font-size: 1.75rem;
+  }
+
+  .project-badges {
+    display: none;
+  }
+}
